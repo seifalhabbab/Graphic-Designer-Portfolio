@@ -10,7 +10,7 @@
     <!-- * Font Awesome -->
     <link rel="stylesheet" href="CSS/all.min.css">
     <!--* Main CSS File -->
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- * Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,12 @@
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="Images/LOGON.png" alt="logo">
+                <img src="Images/logo.png" alt="logo">
             </a>
             <nav>
-                <i class="fas fa-bars toggle-menu"></i>
-                <ul>
-                    <li><a class="active" href="#landing">Home</a></li>
+                <i class="fas fa-bars toggle-menu" id="toggle-menu"></i>
+                <ul class="menu" id="menu">
+                    <li><a class="active" href="#Home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
@@ -38,6 +38,7 @@
                 </ul>
                 <div class="form">
                     <i class="fa-solid fa-magnifying-glass"></i>
+
                 </div>
             </nav>
         </div>
@@ -46,7 +47,7 @@
     <!--* Start Landing  -->
     <div class="landing" id="landing">
         <div class="overlay"></div>
-        <div class="text">
+        <div class="text landing-text">
             <div class="content">
                 <h2>
                     Hello World!<br>
@@ -83,14 +84,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, itaque.</p>
                     </div>
                 </div>
-                <div class="srv-box">
+                <div class="srv-box even">
                     <i class="fab fa-sketch fa-3x"></i>
                     <div class="text">
                         <h3>Vorem amet intuitive</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, itaque.</p>
                     </div>
                 </div>
-                <div class="srv-box">
+                <div class="srv-box even">
                     <i class="fas fa-vector-square fa-3x"></i>
                     <div class="text">
                         <h3>Vorem amet intuitive</h3>
@@ -149,7 +150,7 @@
                 </a>
             </ul>
         </div>
-        <div class="imgs-container">
+        <div class="imgs-container container">
             <div class="box">
                 <img src="Images/shuffle-01.jpg" alt="">
                 <div class="caption">
@@ -157,7 +158,7 @@
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box even">
                 <img src="Images/shuffle-02.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
@@ -171,7 +172,7 @@
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box even">
                 <img src="Images/shuffle-04.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
@@ -185,7 +186,7 @@
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box even">
                 <img src="Images/shuffle-06.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
@@ -199,7 +200,7 @@
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box even">
                 <img src="Images/shuffle-08.jpg" alt="">
                 <div class="caption">
                     <h4>Awesome Image</h4>
@@ -239,22 +240,22 @@
         <div class="container">
             <div class="box">
                 <i class="fas fa-folder"></i>
-                <div class="number">256</div>
+                <div class="number" data-goal="85">0</div>
                 <p>Completed Projects</p>
             </div>
             <div class="box">
                 <i class="fas fa-envelope"></i>
-                <div class="number">1,743</div>
+                <div class="number" data-goal="190">0</div>
                 <p>Mail Sent</p>
             </div>
             <div class="box">
                 <i class="fas fa-trophy"></i>
-                <div class="number">17</div>
+                <div class="number" data-goal="17">0</div>
                 <p>Awards Received</p>
             </div>
             <div class="box">
                 <i class="fas fa-mug-hot"></i>
-                <div class="number">1,263</div>
+                <div class="number" data-goal="867">0</div>
                 <p>Coffee Consumed</p>
             </div>
         </div>
@@ -453,7 +454,7 @@
     <footer>
         <div class="container">
             <img src="Images/LOGON.png" alt="logo">
-            <p>We Are Social</p>
+            <p class="text">We Are Social</p>
             <div class="social-icons">
                 <a href="#"></a><i class="fab fa-facebook-f"></i></a>
                 <a href="#"></a><i class="fab fa-instagram"></i></a>
@@ -464,6 +465,9 @@
         </div>
     </footer>
     <!-- * End Footer -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
